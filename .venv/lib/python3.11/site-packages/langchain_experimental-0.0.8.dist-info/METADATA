@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: langchain-experimental
+Version: 0.0.8
+Summary: Building applications with LLMs through composability
+Home-page: https://www.github.com/hwchase17/langchain
+License: MIT
+Requires-Python: >=3.8.1,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: langchain (>=0.0.239)
+Project-URL: Repository, https://www.github.com/hwchase17/langchain
+Description-Content-Type: text/markdown
+
+# 🦜️🧪 LangChain Experimental
+
+This repository holds more experimental LangChain code.
