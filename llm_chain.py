@@ -1,6 +1,6 @@
 import together 
 import os
-import together
+from dotenv import load_dotenv, dotenv_values
 import logging
 from typing import Any, Dict, List, Mapping, Optional
 
@@ -14,19 +14,24 @@ import json
 import textwrap
 from langchain import PromptTemplate,  LLMChain
 
-os.environ["TOGETHER_API_KEY"] = "b05aa6a73de99895c1f9c89cd0e0013d5ba22d7720a737bb7c106f3d417b8d48"
+#os.environ["TOGETHER_API_KEY"] = "b05aa6a73de99895c1f9c89cd0e0013d5ba22d7720a737bb7c106f3d417b8d48"
+
+load_dotenv()
 
 # set your API key
-together.api_key = os.environ["TOGETHER_API_KEY"]
+#together.api_key = os.environ["TOGETHER_API_KEY"]
+together.api_key = os.getenv("TOGETHER_API_KEY")
+print(together.api_key)
+
 
 # list available models and descriptons
 models = together.Models.list()
 
 # print the first model's name
-print(models[3]['name']), print(models[51]['name'])
+#print(models[3]['name']), print(models[51]['name'])
 
 for idx, model in enumerate(models):
-    print(idx, model['name'])
+ print(idx, model['name'])
 
  
 
