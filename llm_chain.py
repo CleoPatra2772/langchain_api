@@ -14,7 +14,6 @@ import json
 import textwrap
 from langchain import PromptTemplate,  LLMChain
 
-#os.environ["TOGETHER_API_KEY"] = "b05aa6a73de99895c1f9c89cd0e0013d5ba22d7720a737bb7c106f3d417b8d48"
 
 load_dotenv()
 
